@@ -1,0 +1,47 @@
+
+  <div class="w-100 main-data pt-3">
+    <div class="card-title d-flex justify-content-end align-items-center mb-5 pe-5">
+      <a class="pe-5"[routerLink]="['/attendance-departure']" routerLinkActive="''">
+        <fa-icon [icon]="faLongArrowRight" [ngStyle]="{'color':'#28688B'}" class=" fs-3 mb-5" ></fa-icon></a>
+    </div>
+      <div class="title text-center pb-5 fw-semi-bold" [ngStyle]="{'color': '#296889'}">
+        View attendance
+      </div>
+      <div class="card mx-auto mt-5 pb-5 w-75 rounded" [ngStyle]="{'background-color':'#fff','border':'none'}" [formGroup]="attendnaceForm">
+       
+         
+            <div class="row">
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="name" class="form-label mb-0">employee Name</mat-label>
+                <p class="form-control">{{attendnaceForm.get('name')?.value}}</p>
+              </div>
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="department" class="form-label mb-0">department Name</mat-label>
+                <p class="form-control">{{attendnaceForm.get('department')?.value}}</p>
+              </div>
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="check_in" class="form-label mb-0">Attedance Time</mat-label>
+                <p class="form-control">{{ attendnaceForm.get('check_in')?.value }}</p>
+              </div>
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="check_out" class="form-label mb-0">Departure Time</mat-label>
+                <p class="form-control">{{ attendnaceForm.get('check_out')?.value }}</p>
+              </div>
+            </div>
+            <div class="row">
+            
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="date" class="form-label mb-0">Attendance Date</mat-label>
+                <p class="form-control" >{{ attendnaceForm.get('date')?.value }}</p>
+              </div>
+              <div class="form-group mb-3 col-md-3">
+                <mat-label for="status" class="form-label mb-0">Status</mat-label>
+                <p class="form-control" >{{ attendnaceForm.get('status')?.value }}</p>
+              </div>
+            </div>
+  
+            
+
+         
+      </div>
+      </div>

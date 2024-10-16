@@ -1,0 +1,93 @@
+body
+{
+  background-color: #EBEBEB;
+}
+.logo
+{
+  width: 10%;
+}
+.title
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: white; }
+  100% { border-color: transparent; }
+}
+
+.text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.75s step-end infinite;
+}
+form
+{
+  width: 36%;
+}
+.month,.year,.submit
+{
+  width: 34%;
+}
+.stroke
+{
+  border: 2px solid #76BACE;
+  font-size: 13px;
+}
+.show
+{
+  background-color:#28688B;
+  color: white;
+  font-size: 15px;
+  /* margin-left: 100px; */
+}
+.search i
+{
+  cursor: pointer;
+  color: #fff;
+  background-color:#28688B;
+  padding: 10px;
+  right: 0;
+  margin: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search div span
+{
+  background-color: #76BACE;
+  color: white;
+  cursor: pointer;
+}
+thead th
+{
+  color: white;
+  text-align: center;
+}
+i
+{
+  /* font-size: 30px; */
+  cursor: pointer;
+}
+td
+{
+  text-align: center;
+}
+.print
+{
+  font-size: 30px;
+  color:#28688B;
+}
+
+table {
+  width: 100%;
+}
+.text-danger{
+  cursor: pointer;
+}
+mat-label{
+  color: #28688B;
+  font-weight: 600;
+}
